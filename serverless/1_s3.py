@@ -60,7 +60,7 @@ bucket_name = generate_bucket_name(my_name)
 if my_name == "add-your-name-here":
     print("❌ Remember to change 'add-your-name-here' to your actual name!")
 else:
-    print(f"✅ Name generator ready")
+    print("✅ Name generator ready")
     print(f"📝 Your generated bucket name: {bucket_name}")
 
 # %%
@@ -110,7 +110,7 @@ print(f"⬆️  Uploading file to bucket: {bucket_name}")
 
 try:
     s3.upload_file("my_content.txt", bucket_name, "my_content.txt")
-    print(f"✅ Upload successful!")
+    print("✅ Upload successful!")
     print(f"📍 File location: s3://{bucket_name}/my_content.txt")
     print(f"ℹ️ Note: The https URL https://{bucket_name}.s3.eu-west-1.amazonaws.com/my_content.txt")
     print("   won't work directly because S3 objects are private by default!")
